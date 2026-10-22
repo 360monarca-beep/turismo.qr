@@ -1,0 +1,17 @@
+TURISMO QR - FASE 4: CONEXIÓN REAL
+
+1. Abre cloud-config.js en VS Code.
+2. Reemplaza PEGA_AQUI_TU_PUBLISHABLE_KEY por tu clave sb_publishable_... (sin espacios). La URL del proyecto ya está escrita.
+3. No pongas contraseñas, sb_secret_ ni service_role en ningún archivo web.
+4. Inicia Live Server y abre cloud-admin.html.
+5. Inicia sesión con el usuario que creaste en Supabase Authentication > Users.
+6. Pulsa + Nuevo, llena los datos y Guarda en internet.
+7. Abre index.html y comprueba que aparece el perfil.
+8. Publica todos los archivos de esta carpeta en Cloudflare Pages cuando la prueba funcione.
+
+IMPORTANTE: La tabla utilizada es public.choferes, con columnas nombre, slug, whatsapp, foto_url, vehiculo, descripcion, servicios, activo.
+Esta versión está adaptada a las tablas y políticas que ya ejecutaste en SQL Editor. NO ejecutes el archivo antiguo supabase-setup.sql de la versión 3.
+Los datos se guardan en Supabase, no en el navegador. El enlace QR se debe generar tras publicar la web, no desde localhost.
+Las fotografías por ahora se agregan como URL HTTPS pública; subir imágenes desde el equipo será una fase posterior.
+Para conservar los QR existentes, no cambies el ID/slug después de publicar.
+Si el panel dice que no tienes permisos, comprueba la función public.es_administrador() y el registro de tu usuario en public.administradores.

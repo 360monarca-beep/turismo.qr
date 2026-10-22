@@ -1,0 +1,18 @@
+TURISMO QR - VERSION 2 (EDITOR LOCAL)
+
+1. Abre la carpeta con VS Code y Live Server.
+2. Abre /admin.html EN TU COMPUTADORA para agregar o modificar perfiles.
+3. Pulsa Guardar cambios y luego Descargar drivers.js.
+4. Reemplaza el archivo drivers.js de esta carpeta con el descargado.
+5. Prueba index.html y ?chofer=ID antes de publicar.
+6. Publica SOLO index.html, styles.css, app.js, drivers.js y tus fotos.
+   No subas admin.html ni admin.js ni admin.css a GitHub/Cloudflare Pages.
+7. Al publicar, verifica que el QR contenga la URL publica, NO localhost.
+8. Si cambias el ID de un perfil, su enlace y QR anteriores dejaran de servir.
+9. Los datos y numeros en la plantilla son ejemplos ficticios.
+
+El editor usa localStorage: guarda borradores SOLO en este navegador.
+No es una base de datos, ni tiene login, ni edita la web publica automaticamente.
+Los telefonos, fotos y perfiles publicados seran visibles publicamente.
+El QR se genera mediante api.qrserver.com y requiere internet; el enlace
+publico del perfil se envia a ese servicio para crear la imagen.
